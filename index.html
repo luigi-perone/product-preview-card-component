@@ -17,8 +17,10 @@
 <body>
   <main class="container">
       <div>
-        <img src="./images/image-product-mobile.jpg" class="mobile-img" alt="">
-        <img src="./images/image-product-desktop.jpg" class="img" alt="product-image">
+        <picture>
+          <source media="(max-width:500px)" srcset="./images/image-product-mobile.jpg">
+          <img src="./images/image-product-desktop.jpg" class="img" alt="product-image">
+        </picture> 
       </div>
       <div class="testo">
         <p>PERFUME</p> 

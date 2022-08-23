@@ -18,9 +18,13 @@
     --White: hsl(0, 0%, 100%);
 }
 
-body{
+body {
     background-color: var(--Cream);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
 
 @font-face {
@@ -36,7 +40,6 @@ body{
 .container{
     display:flex ;
     flex-direction: row;
-    margin: 300px auto;
     max-width:500px;
     height: 375px;
     background-color:var(--White);
@@ -47,14 +50,14 @@ body{
 h1{
     color: var(--Very_dark_blue);
     font-size: 35px;
-    font-family: Montserrant;
-    font-weight: 700px;
+    font-family: Fraunces;
+    font-weight: 700;
     padding: 15px 0px;
 }
 
 p{
     display: flex;
-    font-family: Fraunces;
+    font-family: Montserrant;
     font-size: 14px;
     color: var(--Dark_grayish_blue);
     vertical-align: middle;
@@ -86,29 +89,25 @@ button{
     display: flex;
     flex-direction: row;
 }
-.mobile-img{
-    display: none;
-}
+
 .img{
     border-radius: 15px 0 0 15px;
     max-width:250px;
     width:250px;
 }
+
 .icon{
     padding-right: 10px;
 }
 
 @media screen and (max-width:500px) {
     .container{
-        margin-top: 100px;
+        margin: 50px 0px;
         flex-direction: column;
         max-width:250px;
         height: auto;
     }
     .img{
-        display: none;
-    }
-    .mobile-img{
         display: flex;
         width: 250px;
         border-radius: 15px 15px 0px 0px;
